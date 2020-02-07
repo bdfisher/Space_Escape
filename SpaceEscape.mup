@@ -1,0 +1,774 @@
+{
+  "formatVersion": 3,
+  "id": "root",
+  "ideas": {
+    "1": {
+      "title": "\n\"Space Escape\"",
+      "id": 1,
+      "attr": {
+        "position": [
+          -969,
+          -706,
+          1
+        ],
+        "style": {
+          "fontMultiplier": 2,
+          "backgroundColor": "#33CCCC",
+          "text": {
+            "color": "#000000"
+          },
+          "width": 114
+        }
+      },
+      "ideas": {
+        "1": {
+          "title": "Start:",
+          "id": 6,
+          "attr": {
+            "position": [
+              618,
+              4,
+              1
+            ],
+            "style": {
+              "fontMultiplier": 1.5
+            }
+          },
+          "ideas": {}
+        }
+      }
+    },
+    "2": {
+      "title": "Theme:\nYou are captured by an alien race and put on a prison spaceship. There are multiple stages of the game where there are 2-4 options and depending on the option you choose, you will go down a different path. Then ending of the game is you either live or die, depending on the choices you make. So choose wisely!",
+      "id": 5,
+      "attr": {
+        "position": [
+          -1089,
+          -546,
+          1
+        ],
+        "style": {
+          "fontMultiplier": 1.25,
+          "width": 290
+        }
+      }
+    },
+    "3": {
+      "title": "Story: You wake up, head pounding, in a dark small cell, in an unknown place. You are hungry and afraid. You can hear weird voices, in a language you've never heard before. Do you investigate or not?",
+      "id": 7,
+      "attr": {
+        "style": {
+          "fontMultiplier": 1.25,
+          "width": 204
+        },
+        "position": [
+          -428,
+          -602,
+          1
+        ]
+      },
+      "ideas": {
+        "1": {
+          "title": "Option 2: Don't Investigate",
+          "id": 11,
+          "attr": {
+            "position": [
+              921,
+              214,
+              2
+            ],
+            "style": {
+              "width": 99
+            }
+          },
+          "ideas": {}
+        },
+        "-10": {
+          "title": "Option 1: Investigate",
+          "id": 10,
+          "attr": {
+            "position": [
+              265,
+              220,
+              1
+            ],
+            "style": {
+              "width": 111
+            }
+          },
+          "ideas": {}
+        }
+      }
+    },
+    "4": {
+      "title": "Story: You get up and walk towards your cell door. You see light down the hallway. Your cell door is unlocked. Do you choose to go right or left?",
+      "id": 13,
+      "attr": {
+        "position": [
+          -618,
+          -241,
+          1
+        ]
+      },
+      "ideas": {
+        "0.5": {
+          "title": "Right, towards the light and voices",
+          "id": 14,
+          "attr": {
+            "position": [
+              174,
+              163,
+              5
+            ]
+          },
+          "ideas": {}
+        },
+        "-10": {
+          "title": "Left, towards the dark, mysterious void",
+          "id": 15,
+          "attr": {
+            "position": [
+              190,
+              169,
+              6
+            ]
+          },
+          "ideas": {}
+        }
+      }
+    },
+    "5": {
+      "title": "You encounter strange looking guards and they beat you to death: ENDGAME",
+      "id": 16,
+      "attr": {
+        "position": [
+          -762,
+          -4,
+          1
+        ]
+      },
+      "ideas": {}
+    },
+    "6": {
+      "title": "Story: You walk towards the light. You come across a window, that the light is emitting from. Also, you see a door at the end of the hallway.",
+      "id": 17,
+      "attr": {
+        "position": [
+          -458,
+          111,
+          1
+        ]
+      },
+      "ideas": {
+        "1": {
+          "title": "Turn around and go towards the dark, mysterious void",
+          "id": 21,
+          "attr": {
+            "position": [
+              71,
+              196,
+              14
+            ]
+          },
+          "ideas": {}
+        },
+        "-10": {
+          "title": "Look through the window",
+          "id": 19,
+          "attr": {
+            "position": [
+              850,
+              118,
+              15
+            ]
+          },
+          "ideas": {}
+        },
+        "-20": {
+          "title": "You go through the door",
+          "id": 20,
+          "attr": {
+            "position": [
+              411,
+              177,
+              13
+            ]
+          },
+          "ideas": {}
+        },
+        "0.5": {
+          "title": "Turn around and go back to your cell",
+          "id": 22,
+          "attr": {
+            "position": [
+              453,
+              101,
+              10
+            ]
+          },
+          "ideas": {}
+        }
+      }
+    },
+    "7": {
+      "title": "Story: An alarm immediately sounds.",
+      "id": 25,
+      "attr": {
+        "position": [
+          -850,
+          371,
+          1
+        ]
+      },
+      "ideas": {
+        "1": {
+          "title": "Hide in a door on your right",
+          "id": 28,
+          "attr": {
+            "position": [
+              129,
+              73,
+              2
+            ]
+          },
+          "ideas": {}
+        },
+        "-10": {
+          "title": "Freeze up from fear",
+          "id": 27,
+          "attr": {
+            "position": [
+              203,
+              70,
+              3
+            ]
+          },
+          "ideas": {}
+        }
+      }
+    },
+    "8": {
+      "title": "You encounter strange looking guards and they beat you to death: ENDGAME",
+      "id": 26,
+      "attr": {
+        "position": [
+          -269,
+          393,
+          1
+        ]
+      }
+    },
+    "9": {
+      "title": "Strange looking guards come beat you to death: ENDGAME",
+      "id": 29,
+      "attr": {
+        "position": [
+          -1033,
+          518,
+          1
+        ]
+      }
+    },
+    "10": {
+      "title": "Story: You hear commotion outside the closet.",
+      "id": 30,
+      "attr": {
+        "position": [
+          -663,
+          512,
+          1
+        ]
+      },
+      "ideas": {
+        "1": {
+          "title": "You open the door to reason with them",
+          "id": 32,
+          "attr": {
+            "position": [
+              151,
+              88,
+              2
+            ]
+          },
+          "ideas": {}
+        },
+        "-10": {
+          "title": "You stay where you are",
+          "id": 31,
+          "attr": {
+            "position": [
+              124,
+              86,
+              1
+            ]
+          },
+          "ideas": {}
+        }
+      }
+    },
+    "11": {
+      "title": "The strange looking guards find you anyways and beat you to death: ENDGAME",
+      "id": 33,
+      "attr": {
+        "position": [
+          -841,
+          658,
+          1
+        ]
+      }
+    },
+    "12": {
+      "title": "The guards are pissed you are out of your cell. They beat you to death: ENDGAME",
+      "id": 34,
+      "attr": {
+        "position": [
+          -482,
+          668,
+          1
+        ]
+      }
+    },
+    "13": {
+      "title": "Story: You back into your cell, close the door, and act like nothing happened. An hour passes and curiosity strikes you again. You look out your cell and see a security camera. You start to panic. Next thing you know, an alarm sounds and strange looking guards come yell at you in a language you do not understand....They beat you to death: ENDGAME",
+      "id": 38,
+      "attr": {
+        "position": [
+          13,
+          346,
+          1
+        ]
+      }
+    }
+  },
+  "title": "\n\"Space Escape\"",
+  "links": [
+    {
+      "ideaIdFrom": 1,
+      "ideaIdTo": 5,
+      "attr": {
+        "style": {
+          "color": "#707070",
+          "lineStyle": "solid",
+          "arrow": "to"
+        }
+      }
+    },
+    {
+      "ideaIdFrom": 6,
+      "ideaIdTo": 7,
+      "attr": {
+        "style": {
+          "color": "#707070",
+          "lineStyle": "solid",
+          "arrow": "to"
+        }
+      }
+    },
+    {
+      "ideaIdFrom": 10,
+      "ideaIdTo": 13,
+      "attr": {
+        "style": {
+          "color": "#707070",
+          "lineStyle": "solid",
+          "arrow": "to"
+        }
+      }
+    },
+    {
+      "ideaIdFrom": 15,
+      "ideaIdTo": 16,
+      "attr": {
+        "style": {
+          "color": "#707070",
+          "lineStyle": "solid",
+          "arrow": "to"
+        }
+      }
+    },
+    {
+      "ideaIdFrom": 14,
+      "ideaIdTo": 17,
+      "attr": {
+        "style": {
+          "color": "#707070",
+          "lineStyle": "solid",
+          "arrow": "to"
+        }
+      }
+    },
+    {
+      "ideaIdFrom": 20,
+      "ideaIdTo": 25,
+      "attr": {
+        "style": {
+          "color": "#707070",
+          "lineStyle": "solid",
+          "arrow": "to"
+        }
+      }
+    },
+    {
+      "ideaIdFrom": 21,
+      "ideaIdTo": 26,
+      "attr": {
+        "style": {
+          "color": "#707070",
+          "lineStyle": "solid",
+          "arrow": "to"
+        }
+      }
+    },
+    {
+      "ideaIdFrom": 27,
+      "ideaIdTo": 29,
+      "attr": {
+        "style": {
+          "color": "#707070",
+          "lineStyle": "solid",
+          "arrow": "to"
+        }
+      }
+    },
+    {
+      "ideaIdFrom": 28,
+      "ideaIdTo": 30,
+      "attr": {
+        "style": {
+          "color": "#707070",
+          "lineStyle": "solid",
+          "arrow": "to"
+        }
+      }
+    },
+    {
+      "ideaIdFrom": 31,
+      "ideaIdTo": 33,
+      "attr": {
+        "style": {
+          "color": "#707070",
+          "lineStyle": "solid",
+          "arrow": "to"
+        }
+      }
+    },
+    {
+      "ideaIdFrom": 32,
+      "ideaIdTo": 34,
+      "attr": {
+        "style": {
+          "color": "#707070",
+          "lineStyle": "solid",
+          "arrow": "to"
+        }
+      }
+    },
+    {
+      "ideaIdFrom": 22,
+      "ideaIdTo": 38,
+      "attr": {
+        "style": {
+          "color": "#707070",
+          "lineStyle": "solid",
+          "arrow": "to"
+        }
+      }
+    }
+  ],
+  "theme": {
+    "name": "MindMup Default",
+    "node": [
+      {
+        "name": "default",
+        "cornerRadius": 10,
+        "backgroundColor": "#E0E0E0",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#707070",
+            "width": 1,
+            "style": "solid"
+          }
+        },
+        "shadow": [
+          {
+            "color": "#070707",
+            "opacity": 0.4,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ],
+        "text": {
+          "margin": 5,
+          "alignment": "center",
+          "maxWidth": 146,
+          "color": "#4F4F4F",
+          "lightColor": "#EEEEEE",
+          "darkColor": "#000000",
+          "font": {
+            "lineSpacing": 4.5,
+            "lineSpacingPx": 6,
+            "size": 9,
+            "sizePx": 12,
+            "weight": "bold"
+          }
+        },
+        "connections": {
+          "default": {
+            "h": "center",
+            "v": "center"
+          },
+          "from": {
+            "horizontal": {
+              "h": "nearest-inset",
+              "v": "center"
+            }
+          },
+          "to": {
+            "h": "nearest",
+            "v": "center"
+          }
+        },
+        "decorations": {
+          "height": 20,
+          "edge": "top",
+          "overlap": true,
+          "position": "end",
+          "margin": 2,
+          "label": {
+            "border": 1,
+            "cornerRadius": 11,
+            "margin": 2,
+            "font": {
+              "lineSpacing": 0,
+              "lineSpacingPx": 0,
+              "size": 9,
+              "sizePx": 12,
+              "weight": "bold"
+            }
+          },
+          "stickers": {
+            "font": {
+              "family": "emoji"
+            }
+          },
+          "cornerRadius": 12,
+          "backgroundColor": "#22aae0",
+          "opacity": 0.8,
+          "color": "#ffffff"
+        }
+      },
+      {
+        "name": "level_1",
+        "backgroundColor": "#22AAE0"
+      },
+      {
+        "name": "unlabelled_node",
+        "unlabelled": true
+      },
+      {
+        "name": "activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#22AAE0",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "level_1.activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#EEEEEE",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "selected",
+        "shadow": [
+          {
+            "color": "#000000",
+            "opacity": 0.9,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ]
+      },
+      {
+        "name": "collapsed",
+        "shadow": [
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 4
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          }
+        ]
+      },
+      {
+        "name": "collapsed.selected",
+        "shadow": [
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#555555",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 10
+            },
+            "radius": 0
+          },
+          {
+            "color": "#333333",
+            "offset": {
+              "width": 0,
+              "height": 11
+            },
+            "radius": 0
+          }
+        ]
+      }
+    ],
+    "connector": {
+      "default": {
+        "type": "quadratic",
+        "controlPoint": {
+          "above": {
+            "width": 0,
+            "height": 0.75
+          },
+          "below": {
+            "width": 0,
+            "height": 0.75
+          },
+          "horizontal": {
+            "width": 0,
+            "height": 0
+          }
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "transparent",
+          "borderColor": "transparent",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        },
+        "line": {
+          "color": "#707070",
+          "lineStyle": "solid",
+          "width": 1
+        }
+      }
+    },
+    "link": {
+      "default": {
+        "line": {
+          "color": "red",
+          "lineStyle": "dashed",
+          "width": 1
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "theme:canvas.backgroundColor",
+          "borderColor": "theme:canvas.backgroundColor",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        }
+      }
+    },
+    "canvas": {
+      "backgroundColor": "#FFFFFF"
+    }
+  }
+}
