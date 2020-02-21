@@ -1,0 +1,176 @@
+public class PseudoCode
+{
+    public static void main(String[] args)
+    {
+        //Create JFrame
+
+        //Game loop
+
+        print story
+        get input of options
+
+        if (investigate)
+        {
+            print story
+            get input of options
+
+            if (left)
+            {
+                print story
+                you are DEAD
+            }
+
+            if (right)
+            {
+                print story
+                get input of options
+
+                if (window)
+                {
+                    print story
+                    get input of options
+
+                    if (run away)
+                    {
+                        print story
+                        get input of options
+
+                        if (left)
+                        {
+                            print story
+                            you are DEAD
+                        }
+
+                        if (right)
+                        {
+                            print story
+                            get input of options
+
+                            if (left)
+                            {
+                                print story
+                                you WIN
+                            }
+
+                            if (right)
+                            {
+                                print story
+                                you are DEAD
+                            }
+                        }
+                    }
+                }
+
+                if (door)
+                {
+                    print story
+                    get input of options
+
+                    if (freeze up)
+                    {
+                        print story
+                        you are DEAD
+                    }
+
+                    if (hide)
+                    {
+                        print story
+                        get input of options
+
+                        if (stay)
+                        {
+                            print story
+                            you are DEAD
+                        }
+                        
+                        if (open door)
+                        {
+                            print story
+                            you are DEAD
+                        }
+                    }
+                }
+                
+                if (into the dark)
+                {
+                    print story
+                    you are DEAD
+                }
+
+                if (back to cell)
+                {
+                    print story
+                    you are DEAD
+                }
+            }
+        }
+
+        if (dont investigate)
+        {
+            print story
+            get input of options
+
+            if(resist)
+            {
+                print story
+                you are Dead
+            }
+
+            if(comply)
+            {
+                print story
+                
+                if(Robert)
+                {
+                    print story
+                    
+                    if(join him)
+                    {
+                        print story
+                        you are Dead
+                    }
+
+                    if(No)
+                    {
+                        print story
+                        you are Dead
+                    }
+                }
+
+                if(Martin)
+                {
+                   print story
+                   you are Dead 
+                }
+                
+                if(Joe)
+                {
+                    print story
+                    
+                    if(left)
+                    {
+                        print story
+                        you are Dead
+                    }
+
+                    if(right)
+                    {
+                        print story
+
+                        if(left)
+                        {
+                            print story
+                            YOU WIN!
+                        }
+
+                        if(right)
+                        {
+                            print story
+                            you are Dead
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
