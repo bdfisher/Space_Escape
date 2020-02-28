@@ -10,11 +10,11 @@ import javax.swing.SwingConstants;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.ImageIcon;
+import javax.swing.JTextArea;
 
 public class Window {
 
 	private JFrame frame;
-	private JTextField txtSpaceEscape;
 
 	/**
 	 * Launch the application.
@@ -49,22 +49,20 @@ public class Window {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
-		txtSpaceEscape = new JTextField();
-		txtSpaceEscape.setHorizontalAlignment(SwingConstants.CENTER);
-		txtSpaceEscape.setForeground(Color.WHITE);
-		txtSpaceEscape.setBackground(Color.BLACK);
-		txtSpaceEscape.setFont(new Font("Bodoni 72 Oldstyle", Font.BOLD, 24));
-		txtSpaceEscape.setText("Space Escape");
-		txtSpaceEscape.setBounds(140, 6, 191, 49);
-		frame.getContentPane().add(txtSpaceEscape);
-		txtSpaceEscape.setColumns(10);
-		
 		JButton btnNewButton = new JButton("Play");
 		btnNewButton.setFont(new Font("Bodoni 72 Oldstyle", Font.BOLD, 13));
 		btnNewButton.setBounds(175, 180, 117, 29);
 		frame.getContentPane().add(btnNewButton);
 		
-		JLabel lblNewLabel = new JLabel("New label");
+		JTextArea txtrSpaceEscape = new JTextArea();
+		txtrSpaceEscape.setFont(new Font("Bodoni 72 Smallcaps", Font.BOLD, 24));
+		txtrSpaceEscape.setForeground(Color.WHITE);
+		txtrSpaceEscape.setBackground(Color.BLACK);
+		txtrSpaceEscape.setText("Space Escape");
+		txtrSpaceEscape.setBounds(161, 19, 122, 29);
+		frame.getContentPane().add(txtrSpaceEscape);
+		
+		JLabel lblNewLabel = new JLabel("Space Escape");
 		lblNewLabel.setIcon(new ImageIcon("/Users/mikebehnke/Downloads/SpacePic.jpg"));
 		lblNewLabel.setBounds(0, 6, 450, 266);
 		frame.getContentPane().add(lblNewLabel);
