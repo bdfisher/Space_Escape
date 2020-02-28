@@ -1,17 +1,15 @@
 body {
     background-image: url("https://storage.needpix.com/rsynced_images/wallpaper-1477870_1280.jpg");
     background-repeat: no-repeat;
-    background-size: auto;
-    overflow: hidden; 
+    background-size: 100%;
 }
 
 div.titleBar h1 {
-    color: orange;
+    color: whitesmoke;
     font-weight: bold;
-    opacity: 1 !important;
 }
 
 div.titleBar {
     background-color: black;
-    opacity: 0.5;
+    opacity: 1;
 }
