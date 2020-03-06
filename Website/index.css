@@ -11,10 +11,50 @@ div.titleBar h1 {
     color: whitesmoke;
     font-weight: bold;
     font-size: 75px;
+    padding-bottom: 0px;
+    margin-bottom: 24px;
 }
 
 div.titleBar {
     background-color: black;
     opacity: 1;
     text-align: center;
+}
+
+nav {
+    width: 80%;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 0px;
+    text-align: center;
+}
+
+.nav {
+    margin-left: 23%;
+}
+
+li {
+    font-size: 30px;
+    display: inline;
+    padding: 20px;
+    padding-top: 0px;
+    text-align: center;
+}
+
+ul {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    text-align: center
+}
+
+.description{
+  color: whitesmoke;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 100px;
+  margin-left: 75px;
+  margin-right: 75px;
 }
