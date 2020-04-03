@@ -47,7 +47,8 @@ ul {
 
 a {
     text-decoration: none;
-    text-align: center
+    text-align: center;
+    text-shadow: 1px 1px 8px whitesmoke;
 }
 
 .description{
@@ -57,12 +58,50 @@ a {
     margin-top: 100px;
     margin-left: 75px;
     margin-right: 75px;
-}
-
-.devs {
-    color: whitesmoke;
+    text-shadow: 2px 2px 8px black;
 }
 
 h2 {
     font-size: 45px;
+    color: chartreuse;
+    text-align: center;
+    text-shadow: 2px 2px 8px black;
+}
+
+.column img {
+  width: 350px;
+  height: 382px;
+  border-radius: 20%;
+}
+
+.column p {
+  font-size: 20px;
+  text-shadow: 2px 2px black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+  color: whitesmoke;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
 }

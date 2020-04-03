@@ -1,3 +1,5 @@
+@authors Blake Fisher and Michael Behnke
+
 Space Escape
 
 You are captured by an alien race and put on a prison spaceship. 
@@ -6,4 +8,4 @@ depending on the option you choose, you will go down a different path.
 Then ending of the game is you either live or die, depending on the choices 
 you make. So choose wisely!
 
-@authors Blake Fisher and Michael Behnke
+Website: https://playspaceescape.000webhostapp.com/
