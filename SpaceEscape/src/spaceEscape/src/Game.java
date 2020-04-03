@@ -15,12 +15,13 @@ public class Game {
 	
 	JFrame window;
 	Container con;
-	JPanel titleNamePanel, startButtonPanel, mainTextPanel, choiceButtonPanel;
-	JLabel titleNameLabel;
+	JPanel titleNamePanel, startButtonPanel, mainTextPanel, choiceButtonPanel, statusPanel;
+	JLabel titleNameLabel, statusLabel, statusLabelStatus;
 	Font titleFont = new Font("Times New Roman", Font.PLAIN, 84);
 	Font normalFont = new Font("Times New Roman", Font.PLAIN, 30);
 	JButton startButton, choice1, choice2, choice3, choice4;
 	JTextArea mainTextArea;
+	String status;
 	
 	TitleScreenHandler tsHandler = new TitleScreenHandler();
 	
@@ -99,7 +100,6 @@ public class Game {
 		choice2.setFont(normalFont);
 		choiceButtonPanel.add(choice2);
 		
-		/*
 		choice3 = new JButton();
 		choice3.setBackground(Color.white);
 		choice3.setForeground(Color.black);
@@ -110,9 +110,29 @@ public class Game {
 		choice4.setForeground(Color.black);
 		choice4.setFont(normalFont);
 		choiceButtonPanel.add(choice4);
-		*/
 		
+		statusPanel = new JPanel();
+		statusPanel.setBounds(100, 15, 600, 50);
+		statusPanel.setBackground(Color.black);
+		statusPanel.setLayout(new GridLayout(1, 2));
+		con.add(statusPanel);
+		statusLabel = new JLabel("STATUS: ");
+		statusLabel.setFont(normalFont);
+		statusLabel.setForeground(Color.white);
+		statusPanel.add(statusLabel);
+		statusLabelStatus = new JLabel();
+		statusLabelStatus.setFont(normalFont);
+		statusLabelStatus.setForeground(Color.white);
+		statusPanel.add(statusLabelStatus);
 		
+		playerSetup();
+		
+	}
+	
+	public void playerSetup()
+	{
+		status = "ALIVE";
+		statusLabelStatus.setText(status);
 	}
 	
 	public class TitleScreenHandler implements ActionListener
