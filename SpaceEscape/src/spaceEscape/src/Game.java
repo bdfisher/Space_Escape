@@ -40,6 +40,8 @@ public class Game {
 		window.setLayout(null);
 		con = window.getContentPane();
 		
+		position = "gameStart";
+		
 		titleNamePanel = new JPanel();
 		titleNamePanel.setBounds(100, 100, 600, 150);
 		titleNamePanel.setBackground(Color.black);
@@ -175,6 +177,90 @@ public class Game {
 		choice4.setText("");
 	}
 	
+	public void resist()
+	{
+		position = "resist";
+		mainTextArea.setText("The aliens beat you to death for resisting.\n\nGameOver");
+		choice1.setText("Back to Start");
+		choice2.setText("");
+		choice3.setText("");
+		choice4.setText("");
+		status = "DEAD";
+		statusLabelStatus.setText(status);
+	}
+	
+	public void comply()
+	{
+		position = "comply";
+		mainTextArea.setText("The aliens take you to a cafeteria where you see a lot of other captives scattered across the room. You see Robert who appears to be quite strong, Martin who is old and has a cane, and Joe who looks afraid and weak.");
+		choice1.setText("Sit with Robert");
+		choice2.setText("Sit with Martin");
+		choice3.setText("Sit with Joe");
+		choice4.setText("");
+	}
+	
+	public void robert()
+	{
+		position = "robert";
+		mainTextArea.setText("As you sit down, you and Robert start talking. You find out he wants to break out, like you. Robert says he is planning on doing it tonight, and asks if you want to join.");
+		choice1.setText("Say yes");
+		choice2.setText("Say no");
+		choice3.setText("");
+		choice4.setText("");
+	}
+	
+	public void martin()
+	{
+		position = "martin";
+		mainTextArea.setText("As you sit down, he becomes agitated and beats you to death with his cane\n\nGameOver");
+		choice1.setText("Back to Start");
+		choice2.setText("");
+		choice3.setText("");
+		choice4.setText("");
+		status = "DEAD";
+		statusLabelStatus.setText(status);
+	}
+	
+	public void joe()
+	{
+		position = "joe";
+		mainTextArea.setText("As you get to talking, you find out that he wants to escape but wants to go with someone. You get the idea to start making a plan to escape. Joe is on board with your plan to escape tonight. ... It is now night. You get out of your cell and go get Joe. As you start running around the ship you reach the end of the hallway; you can only go left or right");
+		choice1.setText("Go left");
+		choice2.setText("Go right");
+		choice3.setText("");
+		choice4.setText("");
+	}
+	
+	public void joinRobert()
+	{
+		position = "joinRobert";
+		mainTextArea.setText("You go about your day and then when the time comes. You and Robert try to escape. You and Robert reach what appears to be an escape hatch, but there is only room for one. Robert, beats you to death and escapes.\n\nGameOver");
+		choice1.setText("Back to Start");
+		choice2.setText("");
+		choice3.setText("");
+		choice4.setText("");
+	}
+	
+	public void noToRobert()
+	{
+		position = "noToRobert";
+		mainTextArea.setText("You go about your day and night time comes. All of a sudden alarms sound and Robert tries to make you come anyways. Guards catch Robert and accuse you of being his accomplice. They come into your cell and beat you to death\n\nGameOver");
+		choice1.setText("Back to Start");
+		choice2.setText("");
+		choice3.setText("");
+		choice4.setText("");
+	}
+	
+	public void hey()
+	{
+		position = "";
+		mainTextArea.setText("");
+		choice1.setText("");
+		choice2.setText("");
+		choice3.setText("");
+		choice4.setText("");
+	}
+	
 	public class TitleScreenHandler implements ActionListener
 	{
 		public void actionPerformed(ActionEvent event)
@@ -208,10 +294,58 @@ public class Game {
 			case "waitInCell":
 				switch(yourChoice)
 				{
-				case "c1": break;
-				case "c2": break;
+				case "c1": resist(); break;
+				case "c2": comply(); break;
 				}
+				break;
+			case "resist":
+				switch(yourChoice)
+				{
+				case "c1": cell(); break;
+				}
+				break;
+			case "comply":
+				switch(yourChoice)
+				{
+				case "c1": robert(); break;
+				case "c2": martin(); break;
+				case "c3": joe(); break;
+				}
+				break;
+			case "robert":
+				switch(yourChoice)
+				{
+				case "c1": joinRobert(); break;
+				case "c2": noToRobert(); break;
+				}
+				break;
+			case "martin":
+				switch(yourChoice)
+				{
+				case "c1": cell(); break;
+				}
+				break;
+			case "joe":
+				switch(yourChoice)
+				{
+				case "c1": cell(); break;
+				}
+				break;
+			case "joinRobert":
+				switch(yourChoice)
+				{
+				case "c1": cell(); break;
+				}
+				break;
+			case "noToRobert":
+				switch(yourChoice)
+				{
+				case "c1": cell(); break;
+				}
+				break;
 			}
+			
+			
 		}
 	}
 }
