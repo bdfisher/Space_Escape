@@ -155,6 +155,8 @@ public class Game {
 		choice2.setText("Wait in cell");
 		choice3.setText("");
 		choice4.setText("");
+		status = "ALIVE";
+		statusLabelStatus.setText(status);
 	}
 	
 	public void investigate()
@@ -192,7 +194,7 @@ public class Game {
 	public void comply()
 	{
 		position = "comply";
-		mainTextArea.setText("The aliens take you to a cafeteria where you see a lot of other captives scattered across the room. You see Robert who appears to be quite strong, Martin who is old and has a cane, and Joe who looks afraid and weak.");
+		mainTextArea.setText("The aliens take you to a cafeteria where you see a lot of other captives scattered across the room. You see Robert who appears to be quite strong, Martin who\nis old and has a cane, and Joe who looks afraid and\nweak.");
 		choice1.setText("Sit with Robert");
 		choice2.setText("Sit with Martin");
 		choice3.setText("Sit with Joe");
@@ -202,7 +204,7 @@ public class Game {
 	public void robert()
 	{
 		position = "robert";
-		mainTextArea.setText("As you sit down, you and Robert start talking. You find out he wants to break out, like you. Robert says he is planning on doing it tonight, and asks if you want to join.");
+		mainTextArea.setText("As you sit down, you and Robert start talking. You\nfind out he wants to break out, like you. Robert says he is planning on doing it tonight, and asks if you\nwant to join.");
 		choice1.setText("Say yes");
 		choice2.setText("Say no");
 		choice3.setText("");
@@ -212,7 +214,7 @@ public class Game {
 	public void martin()
 	{
 		position = "martin";
-		mainTextArea.setText("As you sit down, he becomes agitated and beats you to death with his cane\n\nGameOver");
+		mainTextArea.setText("As you sit down, he becomes agitated and beats you\nto death with his cane\n\nGameOver");
 		choice1.setText("Back to Start");
 		choice2.setText("");
 		choice3.setText("");
@@ -224,7 +226,7 @@ public class Game {
 	public void joe()
 	{
 		position = "joe";
-		mainTextArea.setText("As you get to talking, you find out that he wants to escape but wants to go with someone. You get the idea to start making a plan to escape. Joe is on board with your plan to escape tonight. ... It is now night. You get out of your cell and go get Joe. As you start running around the ship you reach the end of the hallway; you can only go left or right");
+		mainTextArea.setText("As you get to talking, you find out that he wants to\nescape but wants to go with someone. You get the\nidea to start making a plan to escape. Joe is on board\nwith your plan to escape tonight. ... It is now night.\nYou get out of your cell and go get Joe. As you start\nrunning around the ship you reach the end of the hallway; you can only go left or right");
 		choice1.setText("Go left");
 		choice2.setText("Go right");
 		choice3.setText("");
@@ -234,32 +236,82 @@ public class Game {
 	public void joinRobert()
 	{
 		position = "joinRobert";
-		mainTextArea.setText("You go about your day and then when the time comes. You and Robert try to escape. You and Robert reach what appears to be an escape hatch, but there is only room for one. Robert, beats you to death and escapes.\n\nGameOver");
+		mainTextArea.setText("You go about your day and then when the time \ncomes, you and Robert try to escape. You and Robertreach what appears to be an escape hatch, but there\nis only room for one. Robert, beats you to death and escapes.\n\nGameOver");
 		choice1.setText("Back to Start");
 		choice2.setText("");
 		choice3.setText("");
 		choice4.setText("");
+		status = "DEAD";
+		statusLabelStatus.setText(status);
 	}
 	
 	public void noToRobert()
 	{
 		position = "noToRobert";
-		mainTextArea.setText("You go about your day and night time comes. All of a sudden alarms sound and Robert tries to make you come anyways. Guards catch Robert and accuse you of being his accomplice. They come into your cell and beat you to death\n\nGameOver");
+		mainTextArea.setText("You go about your day and night time comes. All of a sudden alarms sound and Robert tries to make you come anyways. Guards catch Robert and accuse you of being his accomplice. They come into your cell\nand beat you to death\n\nGameOver");
+		choice1.setText("Back to Start");
+		choice2.setText("");
+		choice3.setText("");
+		choice4.setText("");
+		status = "DEAD";
+		statusLabelStatus.setText(status);
+	}
+	
+	public void joeLeft()
+	{
+		position = "joeLeft";
+		mainTextArea.setText("Guards immediately catch you. \nYou both are beaten to death\n\nGame Over");
+		choice1.setText("Back to Start");
+		choice2.setText("");
+		choice3.setText("");
+		choice4.setText("");
+		status = "DEAD";
+		statusLabelStatus.setText(status);
+	}
+	
+	public void joeRight()
+	{
+		position = "joeRight";
+		mainTextArea.setText("You run down that hallway and reach the end of that hallway; you can only go right or left");
+		choice1.setText("Go left");
+		choice2.setText("Go right");
+		choice3.setText("");
+		choice4.setText("");
+	}
+	
+	public void joeLeft2()
+	{
+		position = "joeLeft2";
+		mainTextArea.setText("As you are running you hear the aliens getting closer.You come across a strange hatch, which you pull on, revealing an escape pod. The aliens catch up, and Joe tells you to go shoving you into the pod, and the\naliens beat him to death. You press the red button\nreleasing the pod. You have successfully escaped the aliens, but at the cost of Joe's life.");
 		choice1.setText("Back to Start");
 		choice2.setText("");
 		choice3.setText("");
 		choice4.setText("");
 	}
 	
-	public void hey()
+	public void joeRight2()
 	{
-		position = "";
-		mainTextArea.setText("");
-		choice1.setText("");
+		position = "joeRight2";
+		mainTextArea.setText("Guards immediately catch you. \nYou both are beaten to death\n\nGame Over");
+		choice1.setText("Back to Start");
 		choice2.setText("");
 		choice3.setText("");
 		choice4.setText("");
+		status = "DEAD";
+		statusLabelStatus.setText(status);
 	}
+	
+		
+		public void hey()
+		{
+			position = "";
+			mainTextArea.setText("");
+			choice1.setText("");
+			choice2.setText("");
+			choice3.setText("");
+			choice4.setText("");
+		}
+		
 	
 	public class TitleScreenHandler implements ActionListener
 	{
@@ -328,7 +380,8 @@ public class Game {
 			case "joe":
 				switch(yourChoice)
 				{
-				case "c1": cell(); break;
+				case "c1": joeLeft(); break;
+				case "c2": joeRight(); break;
 				}
 				break;
 			case "joinRobert":
@@ -338,6 +391,31 @@ public class Game {
 				}
 				break;
 			case "noToRobert":
+				switch(yourChoice)
+				{
+				case "c1": cell(); break;
+				}
+				break;
+			case "joeLeft":
+				switch(yourChoice)
+				{
+				case "c1": cell(); break;
+				}
+				break;
+			case "joeRight":
+				switch(yourChoice)
+				{
+				case "c1": joeLeft2(); break;
+				case "c2": joeRight2(); break;
+				}
+				break;
+			case "joeLeft2":
+				switch(yourChoice)
+				{
+				case "c1": cell(); break;
+				}
+				break;
+			case "joeRight2":
 				switch(yourChoice)
 				{
 				case "c1": cell(); break;
