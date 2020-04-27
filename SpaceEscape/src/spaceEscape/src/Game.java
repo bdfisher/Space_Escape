@@ -302,6 +302,108 @@ public class Game {
 	}
 	
 		
+		public void investigateLeft()
+		{
+			position = "investigateLeft";
+			mainTextArea.setText("You encounter strange looking guards and they beat you to death\n\nGame Over");
+			choice1.setText("Back to Start");
+			choice2.setText("");
+			choice3.setText("");
+			choice4.setText("");
+			status = "DEAD";
+			statusLabelStatus.setText(status);
+		}
+		
+		public void investigateRight()
+		{
+			position = "investigateRight";
+			mainTextArea.setText("You walk towards the light. You come across a window, that the light is emitting from. Also, you see a door on the right");
+			choice1.setText("Look through window");
+			choice2.setText("Go through door");
+			choice3.setText("Turn around to darkness");
+			choice4.setText("Back to your cell");
+		}
+		
+		public void backToCell()
+		{
+			position = "backToCell";
+			mainTextArea.setText("You back into your cell, close the door, and act like nothing happened. An hour passes and curiosity strikes you again. You look out your cell and see a security camera. You start to panic. Next thing you know, an alarm sounds and strange looking guards come yell at you in a language you do not understand....They beat you to death");
+			choice1.setText("Back to Start");
+			choice2.setText("");
+			choice3.setText("");
+			choice4.setText("");
+			status = "DEAD";
+			statusLabelStatus.setText(status);
+		}
+		
+		public void backToDark()
+		{
+			position = "backToDark";
+			mainTextArea.setText("You encounter strange looking guards and they beat you to death.\n\nGame Over");
+			choice1.setText("Back to Start");
+			choice2.setText("");
+			choice3.setText("");
+			choice4.setText("");
+			status = "DEAD";
+			statusLabelStatus.setText(status);
+		}
+		
+		public void throughDoor()
+		{
+			position = "throughDoor";
+			mainTextArea.setText("An alarm immediately sounds");
+			choice1.setText("Freeze in fear");
+			choice2.setText("Hide in closet");
+			choice3.setText("");
+			choice4.setText("");
+		}
+		
+		public void freeze()
+		{
+			position = "freeze";
+			mainTextArea.setText("Strange looking guards come beat you to death\n\nGame Over");
+			choice1.setText("Back to Start");
+			choice2.setText("");
+			choice3.setText("");
+			choice4.setText("");
+			status = "DEAD";
+			statusLabelStatus.setText(status);
+		}
+		
+		public void hideInCloset()
+		{
+			position = "hideInCloset";
+			mainTextArea.setText("You hear commotion outside the closet.");
+			choice1.setText("Stay where you are");
+			choice2.setText("Try to reason with them");
+			choice3.setText("");
+			choice4.setText("");
+		}
+		
+		public void reason()
+		{
+			position = "reason";
+			mainTextArea.setText("The guards are pissed you are out of your cell. They beat you to death\n\nGame Over");
+			choice1.setText("Back to Start");
+			choice2.setText("");
+			choice3.setText("");
+			choice4.setText("");
+			status = "DEAD";
+			statusLabelStatus.setText(status);
+		}
+		
+		public void stayPut()
+		{
+			position = "stayPut";
+			mainTextArea.setText("The strange looking guards find you anyways and beat you to death\n\nGame Over");
+			choice1.setText("Back to Start");
+			choice2.setText("");
+			choice3.setText("");
+			choice4.setText("");
+			status = "DEAD";
+			statusLabelStatus.setText(status);
+		}
+		
 		public void hey()
 		{
 			position = "";
@@ -339,8 +441,8 @@ public class Game {
 			case "investigate":
 				switch(yourChoice)
 				{
-				case "c1": break;
-				case "c2": break;
+				case "c1": investigateLeft(); break;
+				case "c2": investigateRight(); break;
 				}
 				break;
 			case "waitInCell":
@@ -416,6 +518,65 @@ public class Game {
 				}
 				break;
 			case "joeRight2":
+				switch(yourChoice)
+				{
+				case "c1": cell(); break;
+				}
+				break;
+			case "investigateLeft":
+				switch(yourChoice)
+				{
+				case "c1": cell(); break;
+				}
+				break;
+			case "investigateRight":
+				switch(yourChoice)
+				{
+				case "c1": break;
+				case "c2": throughDoor(); break;
+				case "c3": backToDark(); break;
+				case "c4": backToCell(); break;
+				}
+				break;
+			case "backToCell":
+				switch(yourChoice)
+				{
+				case "c1": cell(); break;
+				}
+				break;
+			case "backToDark":
+				switch(yourChoice)
+				{
+				case "c1": cell(); break;
+				}
+				break;
+			case "throughDoor":
+				switch(yourChoice)
+				{
+				case "c1": freeze(); break;
+				case "c2": hideInCloset(); break;
+				}
+				break;
+			case "freeze":
+				switch(yourChoice)
+				{
+				case "c1": cell(); break;
+				}
+				break;
+			case "hideInCloset":
+				switch(yourChoice)
+				{
+				case "c1": stayPut(); break;
+				case "c2": reason(); break;
+				}
+				break;
+			case "reason":
+				switch(yourChoice)
+				{
+				case "c1": cell(); break;
+				}
+				break;
+			case "stayPut":
 				switch(yourChoice)
 				{
 				case "c1": cell(); break;
