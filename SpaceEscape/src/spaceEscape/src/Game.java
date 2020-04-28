@@ -150,7 +150,7 @@ public class Game {
 	public void cell()
 	{
 		position = "cell";
-		mainTextArea.setText("You wake up, head pounding, in a dark small cellin an unknown place. You are hungry and afraid.\nYou can hear weird voices, in a language you've\nnever heard before. \n\nDo you investigate or not?");
+		mainTextArea.setText("You wake up, head pounding, in a small dark cell in \nan unknown place. You are hungry and afraid.\nYou can hear weird voices, in a language you've\nnever heard before. \n\nDo you investigate or not?");
 		choice1.setText("Investigate");
 		choice2.setText("Wait in cell");
 		choice3.setText("");
@@ -194,7 +194,7 @@ public class Game {
 	public void comply()
 	{
 		position = "comply";
-		mainTextArea.setText("The aliens take you to a cafeteria where you see a lot of other captives scattered across the room. You see Robert who appears to be quite strong, Martin who\nis old and has a cane, and Joe who looks afraid and\nweak.");
+		mainTextArea.setText("The aliens take you to a cafeteria where you see a lot of other captives scattered across the room. You see \nRobert who appears to be quite strong, Martin who\nis old and has a cane, and Joe who looks afraid and\nweak.");
 		choice1.setText("Sit with Robert");
 		choice2.setText("Sit with Martin");
 		choice3.setText("Sit with Joe");
@@ -236,7 +236,7 @@ public class Game {
 	public void joinRobert()
 	{
 		position = "joinRobert";
-		mainTextArea.setText("You go about your day and then when the time \ncomes, you and Robert try to escape. You and Robertreach what appears to be an escape hatch, but there\nis only room for one. Robert, beats you to death and escapes.\n\nGameOver");
+		mainTextArea.setText("You go about your day and then when the time \ncomes, you and Robert try to escape. You and Robertreach what appears to be an escape hatch, but there\nis only room for one. Robert, beats you to death and \nescapes.\n\nGameOver");
 		choice1.setText("Back to Start");
 		choice2.setText("");
 		choice3.setText("");
@@ -248,7 +248,7 @@ public class Game {
 	public void noToRobert()
 	{
 		position = "noToRobert";
-		mainTextArea.setText("You go about your day and night time comes. All of a sudden alarms sound and Robert tries to make you come anyways. Guards catch Robert and accuse you of being his accomplice. They come into your cell\nand beat you to death\n\nGameOver");
+		mainTextArea.setText("You go about your day and night time comes. All of a sudden alarms sound and Robert tries to make you \ncome anyways. Guards catch Robert and accuse you of being his accomplice. They come into your cell\nand beat you to death\n\nGameOver");
 		choice1.setText("Back to Start");
 		choice2.setText("");
 		choice3.setText("");
@@ -282,11 +282,13 @@ public class Game {
 	public void joeLeft2()
 	{
 		position = "joeLeft2";
-		mainTextArea.setText("As you are running you hear the aliens getting closer.You come across a strange hatch, which you pull on, revealing an escape pod. The aliens catch up, and Joe tells you to go shoving you into the pod, and the\naliens beat him to death. You press the red button\nreleasing the pod. You have successfully escaped the aliens, but at the cost of Joe's life.");
+		mainTextArea.setText("As you are running you hear the aliens getting closer.You come across a strange hatch, which you pull on, \nrevealing an escape pod. The aliens catch up, and Joe \ntells you to go shoving you into the pod, and the\naliens beat him to death. You press the red button\nreleasing the pod. You have successfully escaped the aliens, but at the cost of Joe's life.");
 		choice1.setText("Back to Start");
 		choice2.setText("");
 		choice3.setText("");
 		choice4.setText("");
+		status = "Winner!";
+		statusLabelStatus.setText(status);
 	}
 	
 	public void joeRight2()
@@ -305,7 +307,7 @@ public class Game {
 		public void investigateLeft()
 		{
 			position = "investigateLeft";
-			mainTextArea.setText("You encounter strange looking guards and they beat you to death\n\nGame Over");
+			mainTextArea.setText("You encounter strange looking guards and they beat \nyou to death\n\nGame Over");
 			choice1.setText("Back to Start");
 			choice2.setText("");
 			choice3.setText("");
@@ -461,11 +463,13 @@ public class Game {
 		public void runLeft2()
 		{
 			position = "runLeft2";
-			mainTextArea.setText("As you are running, you can hear the aliens getting\ncloser. You come across a strange hatch. You pull on the hatch and it reveals an escape pod. You get in the escape pod, close the hatch, and press the red button. It just so happens, the red button releases the escape pod and conveniently the location is set to Earth.\nYou have successfully escaped!");
+			mainTextArea.setText("As you are running, you can hear the aliens getting\ncloser. You come across a strange hatch. You pull on the hatch and it reveals an escape pod. You get in the escape pod, close the hatch, and press the red button. It just so happens, the red button releases the escape \npod and conveniently the location is set to Earth.\nYou have successfully escaped!");
 			choice1.setText("Back to Start");
 			choice2.setText("");
 			choice3.setText("");
 			choice4.setText("");
+			status = "Winner!";
+			statusLabelStatus.setText(status);
 		}
 		
 		public void runRight2()
