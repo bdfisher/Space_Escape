@@ -83,6 +83,9 @@ h2 {
   box-sizing: border-box;
 }
 
+.mac {
+  font-size: 20px;
+}
 /* Create two equal columns that floats next to each other */
 .column {
   float: left;
