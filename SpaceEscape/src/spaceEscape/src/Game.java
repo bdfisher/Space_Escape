@@ -317,7 +317,7 @@ public class Game {
 		public void investigateRight()
 		{
 			position = "investigateRight";
-			mainTextArea.setText("You walk towards the light. You come across a window, that the light is emitting from. Also, you see a door on the right");
+			mainTextArea.setText("You walk towards the light. You come across a\nwindow, that the light is emitting from. Also, you seea door on the right");
 			choice1.setText("Look through window");
 			choice2.setText("Go through door");
 			choice3.setText("Turn around to darkness");
@@ -327,7 +327,7 @@ public class Game {
 		public void backToCell()
 		{
 			position = "backToCell";
-			mainTextArea.setText("You back into your cell, close the door, and act like nothing happened. An hour passes and curiosity strikes you again. You look out your cell and see a security camera. You start to panic. Next thing you know, an alarm sounds and strange looking guards come yell at you in a language you do not understand....They beat you to death");
+			mainTextArea.setText("You go back into your cell as if nothing happened.\nAfter an hour curiosity strikes you again. You look\nout and see a security camera. Next thing you know, an alarm sounds and alien guards come yell at you in a strange language...They beat you to death\n\nGame Over");
 			choice1.setText("Back to Start");
 			choice2.setText("");
 			choice3.setText("");
@@ -395,7 +395,7 @@ public class Game {
 		public void stayPut()
 		{
 			position = "stayPut";
-			mainTextArea.setText("The strange looking guards find you anyways and beat you to death\n\nGame Over");
+			mainTextArea.setText("The strange looking guards find you anyways and\nbeat you to death\n\nGame Over");
 			choice1.setText("Back to Start");
 			choice2.setText("");
 			choice3.setText("");
@@ -404,11 +404,75 @@ public class Game {
 			statusLabelStatus.setText(status);
 		}
 		
-		public void hey()
+		public void window()
 		{
-			position = "";
-			mainTextArea.setText("");
-			choice1.setText("");
+			position = "window";
+			mainTextArea.setText("As you look through the window, you see what\nappears to be some sort of alien species. As you standthere in awe, you get spotted.");
+			choice1.setText("Run away");
+			choice2.setText("Wait and talk");
+			choice3.setText("");
+			choice4.setText("");
+		}
+		
+		public void windowRun()
+		{
+			position = "windowRun";
+			mainTextArea.setText("As you run down the hallway, you reach the end of it.You can only go left or right");
+			choice1.setText("Go left");
+			choice2.setText("Go right");
+			choice3.setText("");
+			choice4.setText("");
+		}
+		
+		public void windowStand()
+		{
+			position = "windowStand";
+			mainTextArea.setText("The aliens don't reason with prisoners, they beat you to death.\n\nGame Over");
+			choice1.setText("Back to Start");
+			choice2.setText("");
+			choice3.setText("");
+			choice4.setText("");
+			status = "DEAD";
+			statusLabelStatus.setText(status);
+		}
+		
+		public void runLeft()
+		{
+			position = "runLeft";
+			mainTextArea.setText("Guards immediately catch you. You are beaten to\ndeath.\n\nGame Over");
+			choice1.setText("Back to Start");
+			choice2.setText("");
+			choice3.setText("");
+			choice4.setText("");
+			status = "DEAD";
+			statusLabelStatus.setText(status);
+		}
+		
+		public void runRight()
+		{
+			position = "runRight";
+			mainTextArea.setText("You run down that hallway and reach the end of that hallway; you can only go right or left");
+			choice1.setText("Go left");
+			choice2.setText("Go right");
+			choice3.setText("");
+			choice4.setText("");
+		}
+		
+		public void runLeft2()
+		{
+			position = "runLeft2";
+			mainTextArea.setText("As you are running, you can hear the aliens getting\ncloser. You come across a strange hatch. You pull on the hatch and it reveals an escape pod. You get in the escape pod, close the hatch, and press the red button. It just so happens, the red button releases the escape pod and conveniently the location is set to Earth.\nYou have successfully escaped!");
+			choice1.setText("Back to Start");
+			choice2.setText("");
+			choice3.setText("");
+			choice4.setText("");
+		}
+		
+		public void runRight2()
+		{
+			position = "runRight2";
+			mainTextArea.setText("Guards immediately catch you. You are beaten to\ndeath.\n\nGame Over");
+			choice1.setText("Back to Start");
 			choice2.setText("");
 			choice3.setText("");
 			choice4.setText("");
@@ -532,7 +596,7 @@ public class Game {
 			case "investigateRight":
 				switch(yourChoice)
 				{
-				case "c1": break;
+				case "c1": window(); break;
 				case "c2": throughDoor(); break;
 				case "c3": backToDark(); break;
 				case "c4": backToCell(); break;
@@ -577,6 +641,57 @@ public class Game {
 				}
 				break;
 			case "stayPut":
+				switch(yourChoice)
+				{
+				case "c1": cell(); break;
+				}
+				break;
+			case "window":
+				switch(yourChoice)
+				{
+				case "c1": windowRun(); break;
+				case "c2": windowStand(); break;
+				}
+				break;
+			case "windowRun":
+				switch(yourChoice)
+				{
+				case "c1": runLeft(); break;
+				case "c2": runRight(); break;
+				}
+				break;
+			case "windowStand":
+				switch(yourChoice)
+				{
+				case "c1": cell(); break;
+				}
+				break;
+			case "windowRight":
+				switch(yourChoice)
+				{
+				case "c1": cell(); break;
+				}
+				break;
+			case "runLeft":
+				switch(yourChoice)
+				{
+				case "c1": cell(); break;
+				}
+				break;
+			case "runRight":
+				switch(yourChoice)
+				{
+				case "c1": runLeft2(); break;
+				case "c2": runRight2(); break;
+				}
+				break;
+			case "runLeft2":
+				switch(yourChoice)
+				{
+				case "c1": cell(); break;
+				}
+				break;
+			case "runRight2":
 				switch(yourChoice)
 				{
 				case "c1": cell(); break;
