@@ -172,7 +172,7 @@ public class Game {
 	public void waitInCell()
 	{
 		position = "waitInCell";
-		mainTextArea.setText("After what feels like hours of sitting in your cell,\nstrange looking aliens are come and try to take you\nsomewhere. \n\nWhat do you do?");
+		mainTextArea.setText("After what feels like hours of sitting in your cell,\nstrange looking aliens come and try to take you\nsomewhere. \n\nWhat do you do?");
 		choice1.setText("Resist");
 		choice2.setText("Comply");
 		choice3.setText("");
@@ -282,7 +282,7 @@ public class Game {
 	public void joeLeft2()
 	{
 		position = "joeLeft2";
-		mainTextArea.setText("As you are running you hear the aliens getting closer.You come across a strange hatch, which you pull on, \nrevealing an escape pod. The aliens catch up, and Joe \ntells you to go shoving you into the pod, and the\naliens beat him to death. You press the red button\nreleasing the pod. You have successfully escaped the aliens, but at the cost of Joe's life.");
+		mainTextArea.setText("As you are running you hear the aliens getting closer.You come across a strange hatch, which you pull on, revealing an escape pod. The aliens catch up, and Joe tells you to go, shoving you into the pod, and the\naliens beat him to death. You press the red button\nreleasing the pod. You have successfully escaped the aliens, but at the cost of Joe's life.");
 		choice1.setText("Back to Start");
 		choice2.setText("");
 		choice3.setText("");
